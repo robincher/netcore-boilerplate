@@ -48,7 +48,7 @@ namespace HappyCode.NetCoreBoilerplate.Api.BackgroundServices
                 }
                 catch (Exception ex)
                 {
-                    _logger.LogWarning(ex, "Error during ping");
+                    _logger.LogWarning(ex, "Encountered Error during ping");
                 }
                 await _timer.WaitForNextTickAsync(cancellationToken);
             }
